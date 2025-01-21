@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <section>
+    <div class="login-box">
+        <form action="">
+            <h2>Contact Us</h2>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="name" required name="" id="">
+                <label for="">Name</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" required name="" id="">
+                <label for="">Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required name="" id="">
+                <label for="">Query</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS
+    emailjs.init("gHwntE7JHGo_VCO-I"); // Replace with your EmailJS user ID
+
+    document.querySelector("form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get the input values
+        const toname = "Vaibhav Chauhan";
+        const name = document.querySelector("input[type='name']").value.trim();
+        const email = document.querySelector("input[type='email']").value.trim();
+        const query = document.querySelector("input[type='text']").value.trim();
+
+        // Validate inputs
+        if (!name || !email) {
+            alert("Please fill in all the required fields: Name and Email.");
+            return;
+        }
+
+        // Send data using EmailJS
+        emailjs.send("service_xdyv2px", "template_ozkrrpd", {
+            to_name: toname,
+            from_name: name,
+            text: query,
+            reply_to: email,
+        }).then(
+            function (response) {
+                alert("Your message has been sent successfully!");
+                location.reload();
+            },
+            function (error) {
+                console.error("EmailJS Error:", error);
+                alert("Failed to send your message. Please try again.");
+            }
+        );
+    });
+</script>
+
+</body>
+
+</html>

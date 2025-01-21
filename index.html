@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vaibhav Chauhan</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700"rel="stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu-responsive">
+      <nav>
+          <ul>
+              <li><a class="scroll" href="#about">About</a></li>
+              <li><a class="scroll" href="#skills">Skills</a></li>
+              <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+              <li><a class="scroll" href="#" onclick="openWin()">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
+
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="header__top">
+                  <div class="col-md-6 header__top-brand">
+                      <h1><span class="bold">Vaibhav</span>Chauhan</h1>
+                      <hr>
+                  </div>
+                  <nav class="col-md-6 header__top-nav hidden-md-down">
+                      <ul>
+                          <li><a class="scroll" href="#about">About</a></li>
+                          <li><a class="scroll" href="#skills">Skills</a></li>
+                          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+                          <li><a class="scroll" href="#" onclick="openWin()">Contact</a></li>
+                      </ul>
+                  </nav>
+                  <nav class="col-md-6 header__top--responsive hidden-lg-up">
+                      <ul>
+                          <li><a class="menu-bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+
+          <div class="header__content">
+              <p class="bold">Hello !</p>
+              <p>I'm a  <span class="bold">ZOHO Developer</span></p>
+              <a class="btn scroll" href="#portfolio">See My Work</a>
+          </div>
+
+          <div class="header__arrow">
+              <a class="scroll" href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+          </div>
+
+      </div>
+  </header>
+
+  <!-- about -->
+
+  <section id="about">
+      <div class="container">
+          <h2>Who I Am</h2>
+          <hr>
+          <img src="Vaibhav-Chauhan.jpg" alt="vaibhav chauhan">
+          <p class="lead">Developer</p>
+          <p>I am a dedicated Zoho Developer specializing in creating innovative and tailored solutions for businesses. With expertise in Zoho tools such as Zoho Creator, Zoho CRM, Zoho Inventory, and Zoho Books, I design systems that simplify workflows, reduce manual efforts, and make operations paperless.</p>
+          <p>My skill set includes HTML, CSS, JavaScript, Deluge, and Client Script, allowing me to craft seamless user experiences and perform complex third-party integrations to meet unique business needs.</p>
+          <p>I take pride in building user-friendly, adaptable software solutions that empower organizations to streamline their processes and achieve efficiency. My ultimate goal is to ensure that businesses can focus on what matters most, supported by reliable and easy-to-use technology.</p>
+          <p>For more Informations</p>
+          <a class="btn" href="#" onclick="openWin()">Contact Me</a>
+      </div>
+  </section>
+
+  <!-- skill -->
+
+  <section id="skills">
+      <div class="container">
+          <h2>My Skills</h2>
+          <hr>
+          <div class="row">
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">95%</div>
+                  <div class="progress-container">
+                      <strong>Zoho Creator</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 95%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">80%</div>
+                  <div class="progress-container">
+                      <strong>Zoho CRM</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">90%</div>
+                  <div class="progress-container">
+                      <strong>Zoho Books</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">85%</div>
+                  <div class="progress-container">
+                      <strong>Zoho Inventory</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 85%"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- protfolio -->
+
+  <section id="portfolio">
+      <h2>Portfolio</h2>
+      <hr>
+      <div class="container">
+          <div class="portfolio__projects">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>ZOHO PEOPLE</h3>
+                              <p onclick="openPeo()">See More</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="people-logo.png">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>ZOHO CREATOR</h3>
+                              <p onclick="openCre()">See More</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="images.png">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>ZOHO CRM</h3>
+                              <p onclick="openCrm()">See More</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="crm-logo.png">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>ZOHO INVENTORY</h3>
+                              <p onclick="openInv()">See More</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="inventory-logo.png">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>ZOHO BOOKS</h3>
+                              <p onclick="openBok()">See More</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="books-logo.png">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>ZOHO PROJECTS</h3>
+                              <p onclick="openPro()">See More</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="projects-logo.png">
+                      </figure>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- contact -->
+  <section id="testimonials" style="background: url('imgs/bg.jpg')">
+    <div class="container">
+        <h2>What Clients Say</h2>
+        <blockquote>
+            "Outstanding Zoho expertise! Delivered our CRM solution on time and exceeded expectations. Highly recommended."
+            <cite>- Mohit Mittal, Mores techno Pvt. Ltd.</cite>
+        </blockquote>
+        <blockquote>
+            "Outstanding Zoho expertise! Delivered our CRM solution on time and exceeded expectations. Highly recommended."
+            <cite>- Sanya Kalra, Sanya Internationals Pvt. Ltd.</cite>
+        </blockquote>
+    </div>
+    
+</section>
+  <section id="contact">
+      <div class="container">
+          <p class="lead">Do you like what you see ?</p>
+          <p>Need a <span class="text-animate">Developer ?</span></p>
+          <a class="btn" href="#" onclick="openWin()">Contact Me</a>
+
+          <div class="contact__social">
+              <a href="https://www.linkedin.com/in/vaibhav-chauhan-725b2b239/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+      </div>
+  </section>
+
+  <section id="footer">
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js'></script>
+    <script src="script.js"></script>
+  </body>
+</html>
